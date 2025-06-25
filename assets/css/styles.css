@@ -1,0 +1,153 @@
+body {
+    background-image: url('../images/background_image2.jpg');
+    background-size: cover;
+    /* Scale to fill screen */
+    background-position: center;
+    /* Keep it centered */
+    background-repeat: no-repeat;
+    /* Avoid tiling */
+    height: 100vh;
+    /* Viewport height */
+    margin: 0;
+    /* Remove default spacing */
+    overflow: hidden;
+}
+
+.transparent-box {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    width: 96vw;
+    /* Viewport-relative width */
+    height: 94vh;
+    /* Viewport-relative height */
+    margin: 20px auto;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .transparent-box {
+        width: 92vw;
+        height: 95vh;
+    }
+}
+
+.box-right-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 30px 40px;
+}
+
+.box-right-corner h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.box-right-corner h4 {
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.nav-menu li {
+    margin-bottom: 10px;
+}
+
+.nav-menu a {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.0rem;
+    padding: 1px 0;
+    transition: border-color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    border-bottom: 2px solid #4cc9f0;
+}
+
+.box-left-bottom-corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    padding: 30px 40px;
+}
+
+.box-left-bottom-corner p {
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+#projects-section {
+  display: none;              /* Hidden by default */
+  position: absolute;         /* So it layers correctly inside the box */
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-height: 90vh;           /* Adjust this for your layout */
+  overflow-y: auto;           /* Enables vertical scrolling */
+  padding: 30px 40px;
+  color: #ffffff;
+  box-sizing: border-box;     /* Ensures padding doesn't overflow */
+}
+
+#projects-section {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+#projects-section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: #3232329f;
+  color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 8px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #38a3d2;
+}
+
+#contact-section{
+    color: #ffffff;
+}

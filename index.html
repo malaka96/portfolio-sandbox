@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script>
+        function showSection(section) {
+            const home = document.getElementById('home-section');
+            const projects = document.getElementById('projects-section');
+            const contact = document.getElementById('contact-section');
+
+            home.style.display = (section === 'home') ? 'block' : 'none';
+            projects.style.display = (section === 'projects') ? 'block' : 'none';
+            contact.style.display = (section === 'contact') ? 'block' : 'none';
+        }
+    </script>
+
+    <title>Malaka Madhubhashana</title>
+</head>
+
+<body>
+    <div class="transparent-box">
+        <section class="box-right-corner">
+            <h1>Malaka Madhubhashana</h1>
+            <h4>Software Developer | Game Developer</h4>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="box-left-bottom-corner" id="home-section">
+            <p>
+                I'm a passionate developer<br>
+                with experience in HTML, CSS, Java,<br>
+                Django, Flutter, and Unity.<br>
+                I enjoy building clean, user-friendly web<br>
+                and mobile applications,<br>
+                as well as interactive games.<br>
+                I'm always eager to learn, solve problems,<br>
+                and bring creative ideas to life through code.
+            </p>
+        </section>
+
+        <section class="box-left-bottom-corner" id="projects-section">
+            <h2>Java : Tik Tak Toe Game</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Java : Calculator</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>HTML + CSS : Library Catalog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Flutter : Weather App</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Flutter : Ecommerce App</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Flutter : Movie App</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Unity : Space Shooter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Unity : Jump Quest</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+            <h2>Unity : Paradox-fall</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Debitis saepe, molestias alias voluptatem possimus quis,<br>
+                reiciendis officiis ea velit aliquid excepturi ipsum quae <br>
+                temporibus adipisci quia eligendi modi necessitatibus minus.
+            </p>
+        </section>
+        <section class="box-left-bottom-corner" id="contact-section" style="display: none;">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
